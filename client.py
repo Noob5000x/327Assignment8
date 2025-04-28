@@ -11,10 +11,20 @@ except socket.error as e:
     print("Connection failed: ", e) ## error if not able to connect
     exit()
 msg = ""
-while msg != "0": ## will keep going to write messages back and forth until msg == 0
-    if msg == "0":
-        break
-    msg = input("Message (0 to quit): ")
+while True: ## will keep going to write messages back and forth until msg == 0
+    msg = input("Message Database (0 to quit, 1-3 to ask database queries): ")
+    print("Client message to database:)
+    if msg == "1":
+        print("What is the average moisture inside my kitchen fridge in the past three hours?")
+    elif msg == "2":
+        print("What is the average water consumption per cycle in my smart dishwasher?")
+    elif msg == "3":
+        print("Which device consumed more electricity among my three IoT devices (two refrigerators and a dishwasher)?")
+    elif msg == "0":
+        print("Client closes.")
+    else:
+        print("Sorry, this query cannot be processed. Please try one of the following: [1, 2, 3].")
+        continue
     myTCPSocket.send(bytearray(str(msg), encoding='utf-8')) ## sends mgs to server in utf-8
     serverResponse = myTCPSocket.recv(1024)
     if serverResponse:
