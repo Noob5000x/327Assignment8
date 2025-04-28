@@ -9,15 +9,15 @@ myTCPSocket.listen(5)
 print("Server is listening.")
 while True:
   incomingSocket, incomingAddress = myTCPSocket.accept() ## accepts connection
-  print("Connected to partner.")
+  print("Connected to database.")
   while True:
     myData = incomingSocket.recv(1024) ## takes msg from client
     if myData:
-      response = myData.decode().upper() ## capitalizes msg
-      myData = myData.decode()
+      myData = myData.decode('utf-8') 
+      response = myData.upper() ## capitalizes msg
       print(f"Client's message: {myData}")
       print(f"Server response: {response}")
-      myTCPSocket.send(response) ## sends capitalized msg back
+      incomingSocket.send(response.encode('utf-8') ## sends capitalized msg back
     else:
       break
   incomingSocket.close()
