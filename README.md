@@ -33,6 +33,7 @@ By completing this assignment, you will:
 #### Step 1: Modify the TCP Client
 
 Update your TCP client from Assignment 6 to:
+
 • Accept and process the following three queries only:
 1. What is the average moisture inside my kitchen fridge in the past three hours?
 2. What is the average water consumption per cycle in my smart dishwasher?
