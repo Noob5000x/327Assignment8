@@ -13,7 +13,7 @@ except socket.error as e:
 msg = ""
 while True: ## will keep going to write messages back and forth until msg == 0
     msg = input("Message Database (0 to quit, 1-3 to ask database queries): ")
-    print("Client message to database:\n")
+    print("Client message to database:")
     if msg == "1":
         print("What is the average moisture inside my kitchen fridge in the past three hours?")
     elif msg == "2":
