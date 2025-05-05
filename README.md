@@ -1,4 +1,5 @@
 Server instructions:
+
 1.) On cmd, type "server.py" on the directory you have server.py downloaded.
 2.) Once booted, type in the private ip address of your machine.
 3.) Type in an agreed port number.
@@ -8,6 +9,7 @@ Server instructions:
 7.) Once client quits, server quits.
 
 Client instructions:
+
 1.) On cmd, type "client.py" on the directory you have client.py downloaded.
 2.) Once booted, type in the public ip address of the machine the server.py is listening on.
 3.) Type in the agreed port number.
