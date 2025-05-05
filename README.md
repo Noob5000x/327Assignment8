@@ -16,3 +16,9 @@ Client instructions:
 4.) Once connected, choose from 0-3 as inputs to write queries to server.py
 5.) Keep writing messages to server.py and receiving responses.
 6.) Once done, press 0 to quit.
+
+NeonDB instructions:
+
+1.) Log in using your credentials.
+2.) Find your connection link url for the database you want.
+3.) Edit server.py and replace the database link with yours.
