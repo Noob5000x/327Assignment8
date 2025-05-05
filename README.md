@@ -14,6 +14,7 @@ Server instructions:
 
 7.) Once client quits, server quits.
 
+
 Client instructions:
 
 1.) On cmd, type "client.py" on the directory you have client.py downloaded.
@@ -27,6 +28,7 @@ Client instructions:
 5.) Keep writing messages to server.py and receiving responses.
 
 6.) Once done, press 0 to quit.
+
 
 NeonDB instructions:
 
